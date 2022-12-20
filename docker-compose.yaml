@@ -1,0 +1,12 @@
+version: "3.3"
+services:
+  transfer:
+    image: transfer
+    container_name: transfer
+    ports:
+    - '5500:5500'
+    environment:
+     - TRANSFER_COMMISSION=0.4
+
+
+
