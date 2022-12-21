@@ -1,8 +1,8 @@
 ### 1. ***Для создания и запуска контейнера:***
 1.1. Собрать jar. При сборке в `application.properties` установить значение `integration.test=false`\
 1.2. Создать образ -> `$ docker build -t transfer:latest -t transfer:V1.0 .`\
-1.3. Для запуска -> `$ docker run -itd -p 5500:5500 transfer` (При необходимости указываем `-е TRANSFER_COMMISSION=[VALUE]` см. п.1.4.)\
-1.4. Для запуска -> `$ docker-compose up` (При необходимости, в `docker-compose.yaml` указываем  `- TRANSFER_COMMISSION=[VALUE]` см. п.1.4.)\
+1.3. Для запуска -> `$ docker run -itd -p 5500:5500 transfer` (При необходимости указываем `-е TRANSFER_COMMISSION=[VALUE]` см. п.1.5.)\
+1.4. Для запуска -> `$ docker-compose up` (При необходимости, в `docker-compose.yaml` указываем  `- TRANSFER_COMMISSION=[VALUE]` см. п.1.5.)\
 1.5. Для сервера добавил возможность устанавливать комиссию за перевод из "окружения". Дефолтное значение= 0.01 (1%)
 ### 2. ***Для просмотра log's:***
 2.1. `$ docker logs <container_id>`, либо в файле `/var/lib/docker/container/<container_id>/<container_id>-json.log`\
